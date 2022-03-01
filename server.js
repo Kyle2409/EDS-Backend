@@ -15,11 +15,11 @@ app.use(cors())
 
 const productsRouter = require('./app/routes/product')
 const usersRouter = require('./app/routes/user')
-const authRouter = require('./app/routes/auth.routes')
+
 const cartRouter = require("./app/routes/cart");
 app.use('/products', productsRouter)
 app.use('/users', usersRouter)
-app.use('/auth', authRouter)
+
 app.use("/cart", cartRouter);
 
 app.listen(process.env.PORT || 3000, () => console.log(`Server started on port 3000`))

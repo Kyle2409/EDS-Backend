@@ -60,20 +60,25 @@ POST http://localhost:3000/users/signup
 Content-Type: application/json
 
 {   
-    "fullname": "Kyle Mc Babyys",
-    "password": "emihdasfdwsdadlecebisa22",
-    "email": "SDFGHJasasaddadK@gmail.com",
+    "fullname": "Kyle Mmdsdmdsd",
+    "password": "emihdassdsdfdwsdadlecebisa22",
+    "email": "SDFGHJasadsdsaddadK@gmail.com",
     "phone_number":"02134559303"
     
 }
 
 ###
 
-GET http://localhost:3000/cart/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWUwNTk4YWYzZGZmZmQ2MjlhNzQyZCIsImlhdCI6MTY0NjEzNTEwNCwiZXhwIjoxNjQ2MjIxNTA0fQ.0Z73LndFOBlgbv-JuqOZvMmB9-rAp8YDM9QlM-LbxJs
+GET http://localhost:3000/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWUwNTk4YWYzZGZmZmQ2MjlhNzQyZCIsImlhdCI6MTY0NjEzODI3MywiZXhwIjoxNjQ2MjI0NjczfQ.8nBobn3nKe2cvywHCsONLGsstjr-aKDxbCvfAIlmuh4
 
 
 ###
 
 DELETE  http://localhost:3000/cart/621cbb9c535b2cbb2f3f5fba
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjFjYmI5YzUzNWIyY2JiMmYzZjVmYmEiLCJjYXJ0IjpbXSwiaWF0IjoxNjQ2MDUwNjg3LCJleHAiOjE2NDYxMzcwODd9.NI5Mw7svm8BW7fZAtAi9z3lk08sMmmLuSZq9jyR_7wE
+
+################################
+
+POST http://localhost:3000/cart/621dc7f971c20aee2b47cb66
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjFjYmI5YzUzNWIyY2JiMmYzZjVmYmEiLCJjYXJ0IjpbXSwiaWF0IjoxNjQ2MDUwNjg3LCJleHAiOjE2NDYxMzcwODd9.NI5Mw7svm8BW7fZAtAi9z3lk08sMmmLuSZq9jyR_7wE
