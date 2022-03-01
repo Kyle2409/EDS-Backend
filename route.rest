@@ -1,0 +1,62 @@
+GET http://localhost:3000/products
+
+
+
+###
+
+
+GET http://localhost:3000/products
+
+
+###
+
+
+POST http://localhost:3000/products 
+Content-Type: application/json
+
+{
+    "name": "Acer Nitro 5 i7 16GB RAM 256GB SSD+1TB HDD GTX1650 15 144Hz Laptop",
+    "price": 19 999.00,
+    "category": "Laptop",
+    "img": "https://i.postimg.cc/1ttVqpKf/acer-nitro-5an515-55-front-red-backlit-f8c0.jpg"
+}
+
+
+
+###
+
+
+DELETE http://localhost:3000/products/621c9f217c8bd38838d21b72
+###
+
+
+
+PATCH http://localhost:3000/products
+Content-Type: application/json
+
+{
+    
+}
+
+
+###
+
+
+
+GET http://localhost:3000/users
+
+###
+
+
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{
+     
+    "fullname": "Kyle Mc B",
+    "password": "emihlecebisa22",
+    "email": "SDFGHJK@gmail.com",
+    
+}
+
+
