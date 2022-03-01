@@ -15,10 +15,11 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-    "name": "Acer Nitro 5 i7 16GB RAM 256GB SSD+1TB HDD GTX1650 15 144Hz Laptop",
-    "price": 19 999.00,
+    "title": "Acer Nitro 5 i7 16GB RAM 256GB SSD+1TB HDD GTX1650 15 144Hz Laptop",
+    "price": 19999,
     "category": "Laptop",
-    "img": "https://i.postimg.cc/1ttVqpKf/acer-nitro-5an515-55-front-red-backlit-f8c0.jpg"
+    "img": "https://i.postimg.cc/1ttVqpKf/acer-nitro-5an515-55-front-red-backlit-f8c0.jpg",
+    "description": "fnksfsfs"
 }
 
 
@@ -26,7 +27,7 @@ Content-Type: application/json
 ###
 
 
-DELETE http://localhost:3000/products/621c9f217c8bd38838d21b72
+DELETE http://localhost:3000/products/621de90717708f54aa97a6a5
 ###
 
 
@@ -46,17 +47,33 @@ Content-Type: application/json
 GET http://localhost:3000/users
 
 ###
+POST http://localhost:3000/users/signin
+Content-Type:application/json
 
+{
+"fullname": "Kyle Mc Babyys",
+    "password": "emihdasfdwsdadlecebisa22"
+}
 
+###
 POST http://localhost:3000/users/signup
 Content-Type: application/json
 
-{
-     
-    "fullname": "Kyle Mc B",
-    "password": "emihlecebisa22",
-    "email": "SDFGHJK@gmail.com",
+{   
+    "fullname": "Kyle Mc Babyys",
+    "password": "emihdasfdwsdadlecebisa22",
+    "email": "SDFGHJasasaddadK@gmail.com",
+    "phone_number":"02134559303"
     
 }
 
+###
 
+GET http://localhost:3000/cart/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWUwNTk4YWYzZGZmZmQ2MjlhNzQyZCIsImlhdCI6MTY0NjEzNTEwNCwiZXhwIjoxNjQ2MjIxNTA0fQ.0Z73LndFOBlgbv-JuqOZvMmB9-rAp8YDM9QlM-LbxJs
+
+
+###
+
+DELETE  http://localhost:3000/cart/621cbb9c535b2cbb2f3f5fba
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjFjYmI5YzUzNWIyY2JiMmYzZjVmYmEiLCJjYXJ0IjpbXSwiaWF0IjoxNjQ2MDUwNjg3LCJleHAiOjE2NDYxMzcwODd9.NI5Mw7svm8BW7fZAtAi9z3lk08sMmmLuSZq9jyR_7wE

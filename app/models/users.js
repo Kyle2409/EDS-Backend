@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-  name: {
+  fullname: {
     type: String,
     required: true,
   },
@@ -17,6 +17,14 @@ const userSchema = new mongoose.Schema({
     type: Array,
     required: false,
     default: [],
+  },
+  phone_number: {
+    type: Number,
+    required: true,
+  },
+  join_date: {
+    type: String,
+    default: Date.now,
   },
 });
 
