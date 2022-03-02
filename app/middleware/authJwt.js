@@ -17,6 +17,7 @@ verifyToken = (req, res, next) => {
     }
     req.cart = decoded.cart;
     req.userId = decoded.id;
+    
     next();
   });
 };
