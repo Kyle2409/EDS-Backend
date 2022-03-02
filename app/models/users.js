@@ -13,11 +13,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  cart: {
-    type: Array,
-    required: false,
-    default: [],
-  },
+  
   phone_number: {
     type: Number,
     required: true,
@@ -25,6 +21,11 @@ const userSchema = new mongoose.Schema({
   join_date: {
     type: String,
     default: Date.now,
+  },
+  cart: {
+    type: Array,
+    required: false,
+    default: [],
   },
 });
 
