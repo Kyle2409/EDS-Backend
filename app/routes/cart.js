@@ -13,7 +13,7 @@ router.get("/", [verifyToken, getUser], (req, res) => {
 router.post("/:id", [verifyToken, getUser],  async (req, res) =>{
   let product = await Product.findById(req.params.id).lean()
   let qty = req.body.qty
-  let cart = req.cart
+  let cart = res.user.cart
   let added = false;
   cart.forEach(item =>{
     if(item._id.valueOf() == product._id.valueOf()){
@@ -50,7 +50,7 @@ router.delete("/", [verifyToken, getUser], async (req, res) => {
 });
 
 router.delete("/:id", [verifyToken, getUser], async (req, res) => {
-  let cart = req.cart;
+  let cart = res.user.cart;
   cart.forEach((cartitem) => {
     if (cartitem._id == req.params.id) {
       cart = cart.filter((cartitems) => cartitems._id != req.params.id);
@@ -60,7 +60,7 @@ router.delete("/:id", [verifyToken, getUser], async (req, res) => {
     res.user.cart = cart;
 
     const updated = res.user.save();
-    let token = jwt.sign({ _id: req.userId, cart }, process.env.ACCESSTOKEN, {
+    let token = jwt.sign({ _id: req.userId, cart }, process.env.ACCESS_TOKEN_SECRET, {
       expiresIn: 86400, // 24 hours
     });
     res.json({ message: "Deleted product", updated, token });
